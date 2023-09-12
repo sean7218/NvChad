@@ -4,6 +4,19 @@ local overrides = require("custom.configs.overrides")
 local plugins = {
 
   -- Override plugin definition options
+  {
+    "ibhagwan/fzf-lua",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function()
+      require('fzf-lua').setup({
+        winopts = {
+          preview = {
+            hidden = "hidden"
+          }
+        }
+      })
+    end
+  },
 
   {
     "neovim/nvim-lspconfig",
