@@ -3,7 +3,7 @@ local M = {}
 
 M.general = {
   n = {
-    ["<C-p>"] = {"<cmd> lua require('fzf-lua').find_files() <CR>", "[S]earch [A]ll files"},
+    ["<C-p>"] = {"<cmd> lua require('fzf-lua').files() <CR>", "[S]earch [A]ll files"},
     -- ["<C-p>"] = {"<cmd> lua require('telescope.builtin').find_files() <CR>", "[S]earch [A]ll files"},
     ["<leader>fa"] = {"<cmd> lua require('telescope.builtin').find_files() <CR>", "[S]earch [A]ll files"},
     ["<leader>ff"] = {"<cmd> lua require('telescope.builtin').git_files() <CR>", "[S]earch [A]ll files"},
